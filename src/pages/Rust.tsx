@@ -5,10 +5,13 @@ import Card from '../components/card'
 import Link from 'next/link';
 import Links from '../components/Links'
 
+
 export default function Home() {
-  return (
-    <div>
-      <Links />
-    </div>
-  )
-}
+    return (
+      <div>
+        <Links />
+      </div>
+    )
+  }
+
+
