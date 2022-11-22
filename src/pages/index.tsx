@@ -7,8 +7,11 @@ import Links from '../components/Links'
 
 export default function Home() {
   return (
-    <div>
+    <><div>
       <Links />
-    </div>
+    </div><div className='box'>
+        <h1>dzesdqds</h1>
+      </div></>
   )
+  
 }

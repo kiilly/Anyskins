@@ -6,7 +6,7 @@ import Link from 'next/link';
 import Links from '../components/Links'
 
 
-export default function Home() {
+export default function Rust() {
     return (
       <div>
         <Links />
