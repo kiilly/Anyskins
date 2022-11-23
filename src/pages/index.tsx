@@ -9,9 +9,10 @@ export default function Home() {
   return (
     <><div>
       <Links />
-    </div><div className='box'>
-        <h1>dzesdqds</h1>
-      </div></>
+    </div>
+    <div className='box'>
+        <h1>test</h1>
+    </div></>
   )
   
 }
