@@ -1,6 +1,6 @@
 const Card = ({ title, description }) => {
   return (
-    <div className="w-[200px] h-[200px]" bg-white>
+    <div className="card">
       <h1>{title}</h1>
       <div className="bg-slate-600">
         <p>{description}</p>

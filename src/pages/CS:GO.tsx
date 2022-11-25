@@ -5,25 +5,36 @@ import Card from '../components/card'
 import Link from 'next/link';
 import Links from '../components/Links'
 import Footer from '../components/footer'
+import { useEffect, useState } from 'react';
+import {fetchUsersData} from '../services/Users/UserService'
 
 
-export default function Csgo() {
-    return (<div>
-    <Links />
-      <div className={styles.boxcontainer}>
-          <div className={styles.box}>
-            <div className={styles.item}>One</div>
-            <div className={styles.item}>Two</div>
-            <div className={styles.item}>Three</div>
-            <div className={styles.item}>Four</div>
-            <div className={styles.item}>Five</div>
-            <div className={styles.item}>Six</div>
+
+
+export default function Csgo() {const [data, setData] = useState()
+  useEffect(() => {
+    fetchUsersData().then((data) => {
+      console.log(data)
+      setData(data)
+    })
+  }, [])
+
+    return (
+    <div>
+      {data &&
+       data.map((data,i) =>{
+        return(
+          <div key={data.id}>
+            <Card title={data.name} description={data.email} />
           </div>
-          <footer className={styles.footer}>
-            <Footer />
-          </footer>
-        </div>
-    </div>)
+        )
+       })}
+      <Links />
+        <footer className={styles.footer}>
+          <Footer />
+        </footer>
+    </div>
+    )
   }
 
 
