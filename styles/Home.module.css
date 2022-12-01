@@ -260,3 +260,8 @@
     filter: invert(1);
   }
 }
+
+
+input .style-error{
+  border: 2px solid red;
+}

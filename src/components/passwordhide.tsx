@@ -11,8 +11,7 @@ export default function Password() {
 
   return (
     <div>
-      <input className="bar3" type={passwordShown ? 'text' : 'password'} />
-      <button className="showpassword" onClick={togglePassword}>Show Password</button>
+      <input className="bar3" id="password" name="password" type={passwordShown ? 'text' : 'password'} />
     </div>
   )
 }

@@ -6,7 +6,6 @@ import Link from 'next/link';
 import Links from '../components/Links'
 import Footer from '../components/footer'
 import { useEffect, useState } from 'react';
-import {fetchUsersData} from '../services/Users/UserService'
 import {fetchProductsData} from '../services/Products/ProductService'
 
 

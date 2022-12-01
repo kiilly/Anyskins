@@ -8,7 +8,5 @@ export const fetchUsersData = async() => {
 export const PostUserData = async() => {
     return await api.post('/user/register').then((response) => response.data)
     
-
-
 }
 
