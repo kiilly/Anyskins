@@ -33,7 +33,7 @@ export default function Account() {
                         }, 1000);
                     }
                 else{
-                    alert('Erreur')
+                    alert('Vérifier username et password')
                 }
             })
 

@@ -20,7 +20,7 @@ export default function Order() {const [data, setData] = useState()
     return (
     <div>
       <Links />
-        <footer className={styles.footer}>
+        <footer className={styles.footeracc}>
           <Footer />
         </footer>
     </div>
