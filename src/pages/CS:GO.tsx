@@ -7,29 +7,34 @@ import Links from '../components/Links'
 import Footer from '../components/footer'
 import { useEffect, useState } from 'react';
 import {fetchUsersData} from '../services/Users/UserService'
-
+import {fetchProductsData} from '../services/Products/ProductService'
 
 
 
 export default function Csgo() {const [data, setData] = useState()
   useEffect(() => {
-    fetchUsersData().then((data) => {
-      console.log(data)
+    fetchProductsData().then((data) => {
       setData(data)
     })
   }, [])
 
     return (
     <div>
+      <Links />
+      <div className={styles.componentontainer}>
       {data &&
        data.map((data,i) =>{
+        if(data.CategoryId === 1){
         return(
-          <div key={data.id}>
-            <Card title={data.name} description={data.email} />
-          </div>
+        <div className={styles.card}>
+        <div className={styles.focuscs} key={data.id}>
+            <Card title={data.name} description={data.price} />
+
+        </div>
+      </div>
         )
-       })}
-      <Links />
+       }})}
+       </div>
         <footer className={styles.footer}>
           <Footer />
         </footer>

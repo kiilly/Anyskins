@@ -30,6 +30,16 @@ html
 
 }
 
+#input{
+  width: 250px;
+  height: 30px;
+}
+
+#email{
+  width: 250px;
+  height: 30px;
+}
+
 img {
   display: flex;
   justify-content: center;
@@ -61,3 +71,79 @@ a {
 
   }
 }
+
+.bar3{
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  font-size: large;
+  margin-left: 29%;
+  width: 43%;
+  height: 100%;
+}
+.showpassword{
+  margin-left: 80%;
+  display: grid;
+  margin-top: -33px;
+  width: 70px;
+}
+
+.login {
+  font-size: large;
+  margin-left: 29%;
+  display: grid;
+  margin-top: 35px;
+  width: 250px;
+  height: 35px;
+}
+
+.signin {
+  font-size: large;
+  margin-left: 29%;
+  display: grid;
+  margin-top: 35px;
+  width: 250px;
+  height: 35px;
+}
+
+.container-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.wrapper {
+  margin-top: 30px;
+  margin-left: 125px;
+  width: 630px;
+  height: 320px;
+  background: white;
+  overflow: hidden;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0;
+  transform: scale(0.95);
+  transition: box-shadow 0.5s, transform 0.5s;
+}
+.csgo{
+  width: 651px;
+  height: 355px;
+  background: url(https://vulyterk.sirv.com/Images/logo/csgo.png?w=651&h=500);
+}
+.rocketleague{
+  width: 651px;
+  height: 355px;
+  background: url(https://vulyterk.sirv.com/Images/logo/rl.jpg?w=651&h=355);
+}
+.rust{
+  width: 651px;
+  height: 355px;
+  background: url(https://vulyterk.sirv.com/Images/logo/rust.jpg?w=651&h=355);
+}
+.valorant{
+  width: 651px;
+  height: 355px;
+  background: url(https://vulyterk.sirv.com/Images/logo/valo.jpg?w=651&h=355);
+}
+
+.wrapper:hover{
+  transform: scale(1);
+  box-shadow: 5px 20px 30px rgba(0,0,0,0.2);
+} 

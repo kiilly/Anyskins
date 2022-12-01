@@ -12,7 +12,7 @@ export default function Links() {
           <h1><Link href="/Rust">Rust</Link></h1>
           <h1><Link href="/Valorant">Valorant</Link></h1>
           <h1><Link href="/account"><img src="account.png" id='account' /></Link></h1>
-          <h1><Link href="/"><img src="panier.png" id='order' /></Link></h1>
+          <h1><Link href="/orders"><img src="panier.png" id='order' /></Link></h1>
           </div>
         </main>
       </div>
